@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <style>
+            body{
+              background: rgba(128, 128, 128, 0.028);
+            }
+            .zoom:hover {
+              -ms-transform: scale(1.5); /* IE 9 */
+              -webkit-transform: scale(1.5); /* Safari 3-8 */
+              transform: scale(1.5); 
+            }
+            i.services:hover{
+              color: #f1f1f1;
+              background: green;
+            }
+            .bg-registration {
+                background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(honeymoonf.jpg),no-repeat center center;
+                background-size: cover;
+            }
+            .guider{
+              position: relative;
+            }
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+              }
+              .image {
+                  opacity: 1;
+                  display: block;
+                  width: 100%;
+                  transition: .5s ease;
+                  backface-visibility: hidden;
+                }
+
+                .guider:hover .image {
+                  opacity: 0.3;
+                }
+
+                .guider:hover .middle {
+                  opacity: 1;
+                }
+                
+
+    </style>
+</head>
+<body>
+    <!-- start heading -->
+    <div class="container-fluid bg-light pt-3 d-lg-block">
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-lg-6 text-lg-left text-center mb-2">
+                    <div class="d-flex float-start">
+                        <p><i class='fa fa-envelope'></i>gmail.com</p>
+                        <p class="text-body px-3"> | </p>
+                        <p><i class='fas fa-phone'></i>073756489</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-right  text-center mb-2">
+                    <div class="d-flex float-end">
+                        <a href="https://www.facebook.com" class="text-success px-2"><i class='fab fa-facebook-f'></i></a>
+                        <a href="https://www.instagram.com" class="text-success px-2"><i class='fab fa-instagram'></i></a>
+                        <a href="https://www.twitter.com" class="text-success px-2"><i class='fab fa-twitter'></i></a>
+                        <a href="https://www.linkedin.com" class="text-success px-2"><i class='fab fa-linkedin'></i></a>
+                        <a href="https://www.youtube.com" class="text-success px-2"><i class='fab fa-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End heading -->
+    <!-- start nav -->
+    <div class="container-fluid bg-light position-relative">
+        <div class="container position-relative px-3 bg-light" style="z-index: 3;border: 1px solid rgba(128, 128, 128, 0.143);">
+            <nav class="navbar navbar-expand-sm navbar-light py-3 pl-3">
+                
+                  <a class="navbar-brand" href="#"> <span class="text-success">TRAVEL</span> LER</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="collapsibleNavbar" style="padding-left:600px ;">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                          <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+               
+              </nav>
+              
+        </div>
+    </div>
+    <!-- End nav -->
+
+    <!-- start carousel -->
+    <div class="container-fluid p-0" style="margin-top: -40px;z-index: 4;">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="travel.jpg" alt="Los Angeles" class="d-block" style="width:100%;height: 700px;">
+                <div class="carousel-caption">
+                  <div class="p-3" style="background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.5);color: #f1f1f1;width: 100%;padding: 20px;">
+                    <h3 class="text-white text-uppercase mb-md-3">Tours & Travel</h3>
+                    <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
+                    <a href="#" class="btn btn-success py-3 px-5 mt-2">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="travel2.jpg" alt="Chicago" class="d-block" style="width: 100%;height: 700px;">
+                <div class="carousel-caption ">
+                  <div class="p-3" style="background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.5);color: #f1f1f1;width: 100%;padding: 20px;"> 
+                    <h3 class=" text-uppercase mb-md-3">Tours & Travel</h3>
+                    <h1 class="display-3  mb-md-4">Let's Discover The World Together</h1>
+                    <a href="#" class="btn btn-success py-3 px-5 mt-2">Book Now</a>
+                  </div>
+                </div> 
+              </div>
+              
+              </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"  >
+              <span class="carousel-control-prev-icon mb-n2" style="border: 3px solid black;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon mb-n2" style="border: 3px solid black;"></span>
+            </button>
+          </div>
+    </div>
+    <!-- End carousel -->
+
+    <!-- Start Book line -->
+    <div class="container pb-5 pt-5 bg-light shadow position-relative" style="margin-top: -40px;z-index: 8; ">
+      <div class="row">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-3">
+              <select class="custom-select px-4"style="height: 47px;" >
+                <option selected>Destination</option>
+                <option value="1">Destination1</option>
+                <option value="2">Destination2</option>
+                <option value="3">Destination3</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <label  class="px-4">Depart Date</label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="col-3">
+              <label  class="px-4">Return Date</label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="col-3">
+              <select class="custom-select px-4"style="height: 47px;" >
+                <option selected>Duration</option>
+                <option value="1">Duration1</option>
+                <option value="2">Duration2</option>
+                <option value="3">Duration3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button type="submit" class="btn btn-success px-5" style="height: 47px;">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Book line -->
+
+    <!-- Start About us -->
+    <div class="container-fluid mt-5 pt-5" >
+      <div class="container pt-5 d-flex">
+        <img src="traveller.jpg" alt="traveller" width="50%">
+        <div class="container bg-light shadow" style="margin-top: 50px;margin-bottom: 50px;margin-left: -70px;padding: 30px;">
+          <h4 class="text-success">About us</h4>
+          <h3 class="display-6 mb-md-4">We Provide Best Tour Packages With Your Packages</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum blanditiis ad natus odit exercitationem in perspiciatis similique sequi voluptatem voluptates rerum veniam
+             beatae consequatur, dicta ducimus nostrum a mollitia recusandae!</p>
+          <div class="container d-flex p-0">
+            <img src="swit.jpg" alt="traveller" width="50%">
+            <img src="net.jpg" alt="traveller" width="50%" style="margin-left: 10px;">
+          </div>
+          <button type="submit" class="btn btn-success px-5 mt-2" style="height: 47px;">Book Now</button>
+        </div>
+      </div>
+      <!-- Start 3 col -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex">
+              <i class='fas fa-comments-dollar px-3 my-5' style='font-size:48px;color:white;background: green;'></i>
+              <div class="px-3">
+                <h4>Competitive peices</h4>
+                <p>Lorem ipsum dolor sit amet consecte adipisicing elit.
+                 incidunt, animi vero dolorum,
+                  libero nam soluta </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex">
+              <i class='fas fa-user-shield px-3 my-5' style='font-size:48px;color:white;background: green;'></i>
+              <div class="px-3">
+                <h4>Best Services</h4>
+                <p>Lorem ipsum dolor sit amet consecte adipisicing elit.
+                 incidunt, animi vero dolorum,
+                  libero nam soluta </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex">
+              <i class='fas fa-globe-americas px-3 my-5' style='font-size:48px;color:white;background: green;'></i>
+              <div class="px-3">
+                <h4>Worldwide Coverage</h4>
+                <p>Lorem ipsum dolor sit amet consecte adipisicing elit.
+                 incidunt, animi vero dolorum,
+                  libero nam soluta </p>
+              </div>
+            </div>
+        </div>
+        </div>
+        <!-- End three column -->
+    </div>
+    <!-- End About us -->
+
+    <!-- start Destination -->
+    <div class="container" style="margin-top: 100px;">
+      <h4 class="text-success text-center">Destination</h4>
+      <h3 class="display-6 mb-md-4 text-center">Explore Top Destination</h3>
+      <div class="row">
+        <div class="col-4">
+          <div class="zoom mb-5">
+            <img src="original.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="content position-relative" style="margin-top: -70px;background: rgba(128, 128, 128, 0.475);">
+              <h4 class="text-center">United State</h4>
+              <h4 class="text-center">100cities</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="zoom mb-5">
+            <img src="itaaly.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="content position-relative" style="margin-top: -70px;background: rgba(128, 128, 128, 0.475);">
+              <h4 class="text-center">Italy</h4>
+              <h4 class="text-center">100cities</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="zoom mb-5">
+            <img src="spain.jpg" alt="Netherland" width="100%" height="238px">
+            <div class="content position-relative" style="margin-top: -70px;background: rgba(128, 128, 128, 0.475);">
+              <h4 class="text-center">Spain</h4>
+              <h4 class="text-center">100cities</h4>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="zoom">
+            <img src="Aust.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="content position-relative" style="margin-top: -70px;background: rgba(128, 128, 128, 0.475);">
+              <h4 class="text-center">Australia</h4>
+              <h4 class="text-center">100cities</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="zoom">
+            <img src="Thailand.jpeg" alt="Netherland" width="100%"height="238px">
+            <div class="content position-relative" style="margin-top: -70px;background: rgba(128, 128, 128, 0.475);">
+              <h4 class="text-center">Thailand</h4>
+              <h4 class="text-center">100cities</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="zoom">
+            <img src="singapore.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="content position-relative" style="margin-top: -70px;background: rgba(128, 128, 128, 0.475);">
+              <h4 class="text-center">Singappore</h4>
+              <h4 class="text-center">100cities</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Destination -->
+
+    <!-- start services -->
+    <div class="container" style="margin-top: 150px;" id="services">
+      <h4 class="text-success text-center">Services</h4>
+      <h3 class="display-6 mb-md-4 text-center">Tour & Travel Services</h3>
+      <div class="row mt-5">
+        <div class="col" id="eff">
+          <div class="text-center bg-light shadow">
+            <i class='fas fa-comments-dollar px-3 my-5 services' style='font-size:48px;'></i>
+            <div class="">
+              <h4>Competitive peices</h4>
+              <p>Lorem ipsum dolor sit amet consecte adipisicing elit.
+               incidunt, animi vero dolorum,
+                libero nam soluta </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center bg-light shadow">
+            <i class='fas fa-user-shield px-3 my-5 services' style='font-size:48px;'></i>
+            <div class="">
+              <h4>Best Services</h4>
+              <p>Lorem ipsum dolor sit amet consecte adipisicing elit.
+               incidunt, animi vero dolorum,
+                libero nam soluta </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-center bg-light shadow">
+            <i class='fas fa-globe-americas px-3 my-5 services' style='font-size:48px;'></i>
+            <div class="">
+              <h4>Worldwide Coverage</h4>
+              <p>Lorem ipsum dolor sit amet consecte adipisicing elit.
+               incidunt, animi vero dolorum,
+                libero nam soluta </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End services -->
+
+    <!-- Start Packages -->
+    <div class="container" style="margin-top: 150px;">
+      <h4 class="text-success text-center">Packages</h4>
+      <h3 class="display-6 mb-md-4 text-center">Best Tour Packages</h3>
+      <div class="row">
+        <div class="col-4">
+          <div class="mb-5 bg-light shadow pb-3">
+            <img src="traveller1.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="d-flex mt-2 justify-content-between">
+                <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-location-arrow px-2' style='font-size:15px;color: green;'></i>Thailand</h5>
+                <h5 class="px-2" style="font-size: 15px;"><i class='far fa-calendar-alt px-2' style='font-size:15px;color: green;'></i>3 days</h5>
+                <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-stamp px-2' style='font-size:15px;color: green;'></i>2 persons</h5>
+            </div>
+            <h5 class="mt-2 px-2">Discovering amazing places of the world with us</h5>
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0"><i class='fa fa-star px-2' style='font-size:15px;color: green;'></i>4.5 <small>(250)</small></h6>
+                <h5 class="m-0">$250</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="mb-5 bg-light shadow pb-3">
+            <img src="traveller2.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="d-flex mt-2 justify-content-between">
+                <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-location-arrow px-2' style='font-size:15px;color: green;'></i>Madrid</h5>
+                <h5 class="px-2" style="font-size: 15px;"><i class='far fa-calendar-alt px-2' style='font-size:15px;color: green;'></i>3 days</h5>
+                <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-stamp px-2' style='font-size:15px;color: green;'></i>4 persons</h5>
+            </div>
+            <h5 class="mt-2 px-2">Discovering amazing places of the world with us</h5>
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0"><i class='fa fa-star px-2' style='font-size:15px;color: green;'></i>4.5 <small>(250)</small></h6>
+                <h5 class="m-0">$250</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="mb-5 bg-light shadow pb-3">
+            <img src="traveller2.webp" alt="Netherland" width="100%" height="238px">
+            <div class="d-flex mt-2 justify-content-between">
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-location-arrow px-2' style='font-size:15px;color: green;'></i>Dubai</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='far fa-calendar-alt px-2' style='font-size:15px;color: green;'></i>2 days</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-stamp px-2' style='font-size:15px;color: green;'></i>4 persons</h5>
+            </div>
+            <h5 class="mt-2 px-2">Discovering amazing places of the world with us</h5>
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0"><i class='fa fa-star px-2' style='font-size:15px;color: green;'></i>4.5 <small>(250)</small></h6>
+                <h5 class="m-0">$250</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="mb-5 bg-light shadow pb-3">
+            <img src="traveller3.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="d-flex mt-2 justify-content-between">
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-location-arrow px-2' style='font-size:15px;color: green;'></i>Thaiwan</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='far fa-calendar-alt px-2' style='font-size:15px;color: green;'></i>3 days</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-stamp px-2' style='font-size:15px;color: green;'></i>1 persons</h5>
+            </div>
+            <h5 class="mt-2 px-2">Discovering amazing places of the world with us</h5>
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0"><i class='fa fa-star px-2' style='font-size:15px;color: green;'></i>4.5 <small>(250)</small></h6>
+                <h5 class="m-0">$250</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="mb-5 bg-light shadow pb-3">
+            <img src="traveller4.jpg" alt="Netherland" width="100%"height="238px">
+            <div class="d-flex mt-2 justify-content-between">
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-location-arrow px-2' style='font-size:15px;color: green;'></i>South-Korea</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='far fa-calendar-alt px-2' style='font-size:15px;color: green;'></i>3 days</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-stamp px-2' style='font-size:15px;color: green;'></i>1 persons</h5>
+            </div>
+            <h5 class="mt-2 px-2">Discovering amazing places of the world with us</h5>
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0"><i class='fa fa-star px-2' style='font-size:15px;color: green;'></i>4.5 <small>(250)</small></h6>
+                <h5 class="m-0">$250</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="mb-5 bg-light shadow pb-3 ">
+            <img src="traveller5.jpg" alt="Netherland" width="100%" height="238px">
+            <div class="d-flex mt-2 justify-content-between">
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-location-arrow px-2' style='font-size:15px;color: green;'></i>England</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='far fa-calendar-alt px-2' style='font-size:15px;color: green;'></i>3 days</h5>
+              <h5 class="px-2" style="font-size: 15px;"><i class='fas fa-stamp px-2' style='font-size:15px;color: green;'></i>2 persons</h5>
+            </div>
+            <h5 class="mt-2 px-2">Discovering amazing places of the world with us</h5>
+            <div class="border-top mt-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="m-0"><i class='fa fa-star px-2' style='font-size:15px;color: green;'></i>4.5 <small>(250)</small></h6>
+                <h5 class="m-0">$250</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Packages -->
+
+    <!-- Start Honeymoon -->
+    <div class="container-fluid bg-registration" style="margin-top: 150px;">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-7">
+              <h4 style="color: rgba(144, 238, 144, 0.544);">Mega Offer</h4>
+              <h3 class="display-6 mb-md-4 text-white"><span style="color: rgba(144, 238, 144, 0.544);">30% OFF  </span>For Honey Moon</h3>
+              <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur iste alias laudantium quod 
+                doloribus sapiente corporis fuga illum perspiciatis vero dicta eveniet
+                 quibusdam architecto expedita vitae nulla dolores, laboriosam rem.</p>
+              <ul style="list-style:none">
+                <li class="py-2 text-white"><i class='fa fa-check px-2' style='font-size:15px;color: green;'></i>doloribus sapiente corporis fuga</li>
+                <li class="py-2 text-white"><i class='fa fa-check px-2' style='font-size:15px;color: green;'></i>doloribus sapiente corporis fuga</li>
+                <li class="py-2 text-white"><i class='fa fa-check px-2' style='font-size:15px;color: green;'></i>doloribus sapiente corporis fuga</li>
+                <li class="py-2 text-white"><i class='fa fa-check px-2' style='font-size:15px;color: green;'></i>doloribus sapiente corporis fuga</li>
+                <li class="py-2 text-white"><i class='fa fa-check px-2' style='font-size:15px;color: green;'></i>doloribus sapiente corporis fuga</li>
+              </ul>
+          </div>
+          <div class="col-5">
+            <div class="card">
+              <div class="card-header bg-success text-center p-4">
+                <h3 class="display-6 text-white">Sign Up Now</h3>
+              </div>
+              <div class="card-body bg-white p-3">
+                <form action="#">
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control p-4" placeholder="Your Name" required>
+                  </div> 
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control p-4" placeholder="E-mail" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control p-4" placeholder="Address" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="text-center">
+                      <button class="btn btn-success btn-block py-3 px-5">Sign Up Now</button>
+                    </div>
+                  </div>
+                </form>
+              </div> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Honeymoon -->
+
+    <!-- Start Guides -->
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h4 class="text-success text-center">Guides</h4>
+          <h3 class="display-6 mb-md-4 text-center">Our Tour Guides</h3>
+        </div>
+        <div class="row">
+          <div class="col-3 bg-light shadow guider">
+            <img src="guide1.webp" alt="John" width="100%" height="200px" class="image">
+            <div class="text-center mt-3">
+              <h4>JohnSon</h4>
+              <h5 style="color: rgba(128, 128, 128, 0.517);">Dubai Based</h5>
+            </div>
+            <div class="middle"> 
+                <a href="https://www.facebook.com" class="text-success px-1 button1"><i class='fab fa-facebook-f'></i></a>
+                <a href="https://www.instagram.com" class="text-success px-1 button1"><i class='fab fa-instagram'></i></a>
+                <a href="https://www.twitter.com" class="text-success px-1 button1"><i class='fab fa-twitter'></i></a>
+                <a href="https://www.linkedin.com" class="text-success px-1 button1"><i class='fab fa-linkedin'></i></a>
+                <a href="https://www.youtube.com" class="text-success px-1 button1"><i class='fab fa-youtube'></i></a>
+            </div>
+          </div>
+          <div class="col-3 bg-light shadow guider">
+            <img src="guide2.jpg" alt="Scott" width="100%" height="200px" class="image">
+            <div class="text-center mt-3">
+              <h4>Scot</h4>
+              <h5 style="color: rgba(128, 128, 128, 0.517);">Switzerland Based</h5>
+            </div>
+            <div class="middle"> 
+              <a href="https://www.facebook.com" class="text-success px-1 button1"><i class='fab fa-facebook-f'></i></a>
+              <a href="https://www.instagram.com" class="text-success px-1 button1"><i class='fab fa-instagram'></i></a>
+              <a href="https://www.twitter.com" class="text-success px-1 button1"><i class='fab fa-twitter'></i></a>
+              <a href="https://www.linkedin.com" class="text-success px-1 button1"><i class='fab fa-linkedin'></i></a>
+              <a href="https://www.youtube.com" class="text-success px-1 button1"><i class='fab fa-youtube'></i></a>
+            </div>
+          </div>
+          <div class="col-3 bg-light shadow guider">
+            <img src="guide3.jpg" alt="Scarlet" width="100%" height="200px" class="image">
+            <div class="text-center mt-3">
+              <h4>Scarlet</h4>
+              <h5 style="color: rgba(128, 128, 128, 0.517);">Singapore Based</h5>
+            </div>
+            <div class="middle"> 
+              <a href="https://www.facebook.com" class="text-success px-1 button1"><i class='fab fa-facebook-f'></i></a>
+              <a href="https://www.instagram.com" class="text-success px-1 button1"><i class='fab fa-instagram'></i></a>
+              <a href="https://www.twitter.com" class="text-success px-1 button1"><i class='fab fa-twitter'></i></a>
+              <a href="https://www.linkedin.com" class="text-success px-1 button1"><i class='fab fa-linkedin'></i></a>
+              <a href="https://www.youtube.com" class="text-success px-1 button1"><i class='fab fa-youtube'></i></a>
+            </div>
+          </div>
+          <div class="col-3 bg-light shadow guider">
+            <img src="guide4.jpg" alt="Jane" width="100%" height="200px" class="image">
+            <div class="text-center mt-3">
+              <h4>Jane</h4>
+              <h5 style="color: rgba(128, 128, 128, 0.517);">Thailand based</h5>
+            </div>
+            <div class="middle"> 
+              <a href="https://www.facebook.com" class="text-success px-1 button1"><i class='fab fa-facebook-f'></i></a>
+              <a href="https://www.instagram.com" class="text-success px-1 button1"><i class='fab fa-instagram'></i></a>
+              <a href="https://www.twitter.com" class="text-success px-1 button1"><i class='fab fa-twitter'></i></a>
+              <a href="https://www.linkedin.com" class="text-success px-1 button1"><i class='fab fa-linkedin'></i></a>
+              <a href="https://www.youtube.com" class="text-success px-1 button1"><i class='fab fa-youtube'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Guides -->
+
+    <!-- Start Testimonial -->
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h4 class="text-success text-center">Testimonial</h4>
+          <h3 class="display-6 mb-md-4 text-center">What Our Guests Say</h3>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col">
+            <img src="guide4.jpg" class="rounded" alt="Cinque Terre" width="100" height="100">
+            <div class="bg-white shadow pt-5 px-3 pb-3" style="margin-top: -20px;">
+              <p>Lorem ipsum dolor sit amet, consectetur  praesentium optio ad 
+                molestiae minus debitis, commodi, officiis consectetur voluptate </p>
+              <p class="text-center" style="font-size: 20px;">Jurgen Clogg</p>
+              <p class="text-center" style="color: rgba(128, 128, 128, 0.581)
+              ;">Sport Manager</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="guide2.jpg" class="rounded" alt="Cinque Terre" width="100" height="100">
+            <div class="bg-white shadow pt-5 px-3 pb-3" style="margin-top: -20px;">
+              <p>Lorem ipsum dolor sit amet, consectetur  praesentium optio ad 
+                molestiae minus debitis, commodi, officiis consectetur voluptate </p>
+              <p class="text-center" style="font-size: 20px;">Jurgen Clogg</p>
+              <p class="text-center" style="color: rgba(128, 128, 128, 0.581)
+              ;">Sport Manager</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="guide3.jpg" class="rounded" alt="Cinque Terre" width="100" height="100">
+            <div class="bg-white shadow pt-5 px-3 pb-3" style="margin-top: -20px;">
+              <p>Lorem ipsum dolor sit amet, consectetur  praesentium optio ad 
+                molestiae minus debitis, commodi, officiis consectetur voluptate </p>
+              <p class="text-center" style="font-size: 20px;">Jurgen Clogg</p>
+              <p class="text-center" style="color: rgba(128, 128, 128, 0.581)
+              ;">Sport Manager</p>
+            </div>
+          </div>
+
+        </div>
+
+      
+      </div> 
+    </div>
+    <!-- End Testimonial -->
+</body>
+</html>
